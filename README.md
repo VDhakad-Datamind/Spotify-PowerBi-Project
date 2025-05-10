@@ -5,6 +5,8 @@
 
 This Power BI project provides an in-depth analysis of a user’s Spotify listening habits over time. The dashboard visualizes various aspects of audio consumption such as album, artist, and track preferences, listening patterns across days and hours, and average track engagement. Through clean visual design and well-defined DAX measures, the report gives a 360-degree view of how the user interacts with music across years, platforms, and listening contexts.
 
+-**Dataset Link**: [Spotify Dataset](https://github.com/VDhakad-Datamind/Spotify-PowerBi-Project/blob/main/spotify_history.csv)
+
 ## 🎯 Business Requirement
 
 The objective of this dashboard is to:
@@ -22,6 +24,51 @@ The objective of this dashboard is to:
 - **Microsoft Excel/CSV** – as the primary data source (Spotify listening data export).
 - **Power Query** – for data transformation and cleaning.
 - **Date Table** – used to enable time intelligence functions like YOY calculations.
+
+
+## Key Features & Analysis Performed
+
+### 🔥 Listening Patterns Heatmap
+
+- Visualized listening hours across all days of the week
+- Helps identify user peak listening hours
+- Total listening count shown per hour across week
+
+### 🔄 Average Listening Time vs Track Frequency (Quadrant Chart)
+
+- Scatter plot that categorizes songs into 4 quadrants:
+- Low Time & High Frequency
+- High Time & High Frequency
+- High Time & Low Frequency
+- Low Time & Low Frequency
+- Sliders used to set dynamic thresholds for classification
+
+### 📈 Albums, Artists, and Tracks Trend Over Years
+
+- Line chart showing yearly growth
+- KPIs comparing current year (CY) vs previous year (PY)
+- YoY growth percentage displayed
+- Highlights maximum and minimum years via markers
+
+### 🏆 Top 5 Rankings
+
+- Most played albums, artists, and tracks based on count
+- Insights into top user preferences
+
+### 📅 Weekday vs Weekend Listening Comparison
+
+- Donut charts showing distribution of listening based on day type
+
+### 📂 Drill Through Enabled
+
+- Clicking on album, artist, or track details navigates to a detailed track-level report
+- Enhances user interactivity and deeper insight on demand
+
+### 🎛 Navigation Buttons & Parameters
+
+- Used to switch between Overview, Listening Patterns and Drill through Details reports
+- Drop-down filters for year, shuffle, skip status, and platform
+- Slider parameters to control listening time and track frequency
 
 ## 🧠 DAX Measures (Organized by Functional Area)
 
