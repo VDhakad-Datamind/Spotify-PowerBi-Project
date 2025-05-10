@@ -1,5 +1,6 @@
 
 # 📊 Spotify Listening Analysis Dashboard (Power BI)
+![Spotify logo](https://github.com/VDhakad-Datamind/Spotify-PowerBi-Project/blob/main/Spotify_Logo_Final.png)
 
 ## 📘 Introduction
 
@@ -152,4 +153,19 @@ VAR _previous = [Previous yeartracks]
 VAR YOY_growth = IF(NOT(ISBLANK(_previous)), DIVIDE(_latest - _previous, _previous, 0), BLANK())
 RETURN IF(NOT(ISBLANK(_previous)), "vs PY: " & FORMAT(_previous, "#,##0") & " (" & FORMAT(YOY_growth, "0.00%") & ")", "No data")
 ```
+
+## Overview Report
+![Overview](https://github.com/VDhakad-Datamind/Spotify-PowerBi-Project/blob/main/Overview%20-%20Spotify.png)
+
+## Listening Patterns Report
+![Listening_Patterns](https://github.com/VDhakad-Datamind/Spotify-PowerBi-Project/blob/main/Listening%20Patterns.png)
+
+
+## Details - Drill through Report
+![Drill_Through](https://github.com/VDhakad-Datamind/Spotify-PowerBi-Project/blob/main/Details%20-%20Drillthrough.png)
+
+
+
+
+
 
